@@ -2,6 +2,9 @@ import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
 import * as THREE from 'three'
 
+const a = 1
+const b = 1.5
+
 const Box: React.FC<any> = props => {
   // This reference will give us direct access to the mesh
   const mesh = useRef<THREE.Mesh>()
@@ -22,7 +25,7 @@ const Box: React.FC<any> = props => {
     <mesh
       {...props}
       ref={mesh}
-      scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+      scale={active ? [b, b, b] : [a, a, a]}
       onClick={e => setActive(!active)}
       onPointerOver={e => setHover(true)}
       onPointerOut={e => setHover(false)}
@@ -33,7 +36,7 @@ const Box: React.FC<any> = props => {
   )
 }
 
-export default function Boxes() {
+export const Boxes = () => {
   return (
     <Canvas colorManagement>
       <ambientLight intensity={0.2} />

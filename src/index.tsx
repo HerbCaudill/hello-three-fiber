@@ -1,11 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import Boxes from './Boxes'
+import { Alligator } from './Alligator'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Boxes />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+ReactDOM.render(<Alligator />, document.getElementById('root'))
