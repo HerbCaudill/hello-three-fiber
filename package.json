@@ -13,6 +13,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "react-three-fiber": "^5.0.1",
+    "three": "^0.120.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -20,6 +22,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "avoid"
   },
   "eslintConfig": {
     "extends": "react-app"
